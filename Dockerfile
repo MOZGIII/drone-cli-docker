@@ -15,6 +15,6 @@ RUN set -x \
       -o /usr/local/bin/drone \
       "$DRONE_CLI_PACKAGE"
 
-FROM scratch
+FROM alpine
 COPY --from=builder /usr/local/bin/drone /usr/local/bin/drone
 CMD [ "drone" ]
