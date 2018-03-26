@@ -1,6 +1,6 @@
 FROM golang:1.9 as builder
 
-ARG DRONE_CLI_VERSION=v0.7.0
+ARG DRONE_CLI_VERSION=v0.8.5
 ARG DRONE_CLI_REPO=github.com/drone/drone-cli
 ARG DRONE_CLI_PACKAGE=$DRONE_CLI_REPO/drone
 
